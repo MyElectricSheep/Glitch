@@ -11,7 +11,7 @@ const Image = ({ ratio, src }) => {
           }}
         >
           <div className="ratio-inner">
-            <img src={src} alt="card pic" />
+            <img src={src} alt="card pic" style={{ height: "100%" }} />
           </div>
         </div>
       </div>

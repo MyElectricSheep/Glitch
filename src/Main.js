@@ -30,8 +30,8 @@ const Main = () => {
           <div className="container">
             <Info />
             <div className="row">
-              {cards.map((card) => (
-                <div className="column" key={card.title}>
+              {cards.map((card, index) => (
+                <div className="column" key={`${index}-${card.title}`}>
                   <Card>
                     <div className="card-title">{card.title}</div>
                     <div className="card-body">{card.description}</div>

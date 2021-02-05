@@ -1,37 +1,49 @@
+import { LoremIpsum } from "lorem-ipsum";
+
+const lorem = new LoremIpsum({
+  sentencesPerParagraph: {
+    max: 8,
+    min: 4
+  },
+  wordsPerSentence: {
+    max: 16,
+    min: 4
+  }
+});
+
 const cards = [
   {
-    title: "Build faster ⚡️",
-    description:
-      "Create a React web app in the fraction of the time using our library of themes and building blocks. We have everything from navbars and content grids to authentication flows and commenting systems. New blocks are added every week.",
-    image: "https://6jlvz1j5q3.csb.app/undraw_collection.svg",
-    imageRatio: 784 / 1016
+    title: "Javascript ⚡️",
+    description: lorem.generateSentences(5),
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+    imageRatio: 1
   },
   {
-    title: "Tweak anything 👩‍🎨",
-    description:
-      "Built with developers in mind. Change element structure, edit CSS, create components, add props and state. We give you access to the underlying React code so you can do what you need right in our tool.",
-    image: "https://6jlvz1j5q3.csb.app/undraw_upload.svg",
-    imageRatio: 839 / 1133
+    title: "HTML 👷",
+    description: lorem.generateSentences(5),
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    imageRatio: 1
   },
   {
-    title: "Export your code 🚀",
-    description:
-      "Export your project as a high-quality React codebase. We're lazer focused on helping you build and iterate quickly, but expect that you'll eventually want to export and wrap things up in your favorite code editor.",
-    image: "https://6jlvz1j5q3.csb.app/undraw_static_assets.svg",
+    title: "CSS 👩‍🎨",
+    description: lorem.generateSentences(5),
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+    imageRatio: 1
+  },
+  {
+    title: "React ⚛️",
+    description: lorem.generateSentences(5),
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     imageRatio: 730 / 1030
   },
   {
-    title: "Export your code 🚀",
-    description:
-      "Export your project as a high-quality React codebase. We're lazer focused on helping you build and iterate quickly, but expect that you'll eventually want to export and wrap things up in your favorite code editor.",
-    image: "https://6jlvz1j5q3.csb.app/undraw_static_assets.svg",
-    imageRatio: 730 / 1030
-  },
-  {
-    title: "Export your code 🚀",
-    description:
-      "Export your project as a high-quality React codebase. We're lazer focused on helping you build and iterate quickly, but expect that you'll eventually want to export and wrap things up in your favorite code editor.",
-    image: "https://6jlvz1j5q3.csb.app/undraw_static_assets.svg",
+    title: "Node 🛠️",
+    description: lorem.generateSentences(5),
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
     imageRatio: 730 / 1030
   }
 ];
